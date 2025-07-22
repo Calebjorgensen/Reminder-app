@@ -1,1 +1,15 @@
-<p>reminder-list works!</p>
+<app-reminder-form (onAdd)="addReminder($event)"></app-reminder-form>
+
+<h3>Your Reminders</h3>
+<ul>
+  <li *ngFor="let r of reminders">
+    <span [ngClass]="{
+      'due-soon': isDueSoon(r.dueDate),
+      'completed': r.completed
+    }">
+      <strong>{{ r.title }}</strong> ({{ r.dueDate | date }}) - {{ r.description }}
+    </span>
+    <button (click)="markCompleted(r)" *ngIf="!r.completed">Mark Done</button>
+    <button (click)="deleteReminder(r._id!)">Delete</button>
+  </li>
+</ul>

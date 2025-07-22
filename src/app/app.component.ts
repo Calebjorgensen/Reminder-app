@@ -8,4 +8,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'reminder-app';
+  currentView: 'list' | 'add' = 'list';
+
+  showList(){
+    this.currentView = 'list';
+  }
+
+  showAddForm(){
+    this.currentView = 'add';
+  }
 }

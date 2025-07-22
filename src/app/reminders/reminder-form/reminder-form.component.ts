@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
+import { Reminder } from '../reminder.model';
 
 @Component({
   selector: 'app-reminder-form',
@@ -8,4 +9,23 @@ import { Component } from '@angular/core';
 })
 export class ReminderFormComponent {
 
+  @Output() onAdd = new EventEmitter<Reminder>();
+
+  newReminder: Reminder = {
+    title: '',
+    description: '',
+    dueDate: '',
+    completed: false
+  };
+
+  addReminder() {
+    if (!this.newReminder.title || !this.newReminder.dueDate) return;
+    this.onAdd.emit({ ...this.newReminder });
+    this.newReminder = {
+      title: '',
+      description: '',
+      dueDate: '',
+      completed: false
+    };
+  }
 }

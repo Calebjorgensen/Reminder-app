@@ -1,1 +1,7 @@
-<p>reminder-form works!</p>
+<h3>Add Reminder</h3>
+<form (ngSubmit)="addReminder()">
+  <input type="text" [(ngModel)]="newReminder.title" name="title" placeholder="Title" required />
+  <input type="text" [(ngModel)]="newReminder.description" name="description" placeholder="Description" />
+  <input type="date" [(ngModel)]="newReminder.dueDate" name="dueDate" required />
+  <button type="submit">Add</button>
+</form>

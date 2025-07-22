@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { ReminderListComponent } from './reminders/reminder-list/reminder-list.component';
 import { ReminderFormComponent } from './reminders/reminder-form/reminder-form.component';
 import { ReminderComponent } from './reminders/reminder/reminder.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ReminderComponent } from './reminders/reminder/reminder.component';
     ReminderComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
