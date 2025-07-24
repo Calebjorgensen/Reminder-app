@@ -2,7 +2,7 @@
 GET http://localhost:3000/api/reminders
 
 ### GET one reminder (replace with a real ID)
-GET http://localhost:3000/api/reminders/REPLACE_WITH_ID
+GET http://localhost:3000/api/reminders/
 
 ### POST new reminder
 POST http://localhost:3000/api/reminders
@@ -16,7 +16,7 @@ Content-Type: application/json
 
 
 ### PUT update reminder (replace ID)
-PUT http://localhost:3000/api/reminders/REPLACE_WITH_ID
+PUT http://localhost:3000/api/
 Content-Type: application/json
 
 {
@@ -27,4 +27,4 @@ Content-Type: application/json
 }
 
 ### DELETE reminder (replace ID)
-DELETE http://localhost:3000/api/reminders/REPLACE_WITH_ID
+DELETE http://localhost:3000/api/
