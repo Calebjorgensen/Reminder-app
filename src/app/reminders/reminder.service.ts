@@ -1,12 +1,14 @@
 import { Injectable } from '@angular/core';
 import { Reminder } from './reminder.model';
 import { of, Observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ReminderService {
   private reminders: Reminder[] = [];
+  private apiUrl = 'http://localhost:3000/api/reminders';
 
   getReminders(): Observable<Reminder[]>{
     return of(this.reminders);
@@ -29,5 +31,5 @@ export class ReminderService {
     return of();
   }
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 }

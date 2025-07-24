@@ -1,0 +1,30 @@
+### GET all reminders
+GET http://localhost:3000/api/reminders
+
+### GET one reminder (replace with a real ID)
+GET http://localhost:3000/api/reminders/REPLACE_WITH_ID
+
+### POST new reminder
+POST http://localhost:3000/api/reminders
+Content-Type: application/json
+
+{
+  "title": "Buy groceries",
+  "description": "Milk, eggs, bread",
+  "dueDate": "2025-08-02T09:00:00.000Z"
+}
+
+
+### PUT update reminder (replace ID)
+PUT http://localhost:3000/api/reminders/REPLACE_WITH_ID
+Content-Type: application/json
+
+{
+  "title": "Updated reminder title",
+  "description": "Updated description",
+  "dueDate": "2025-08-10T15:00:00.000Z",
+  "completed": true
+}
+
+### DELETE reminder (replace ID)
+DELETE http://localhost:3000/api/reminders/REPLACE_WITH_ID

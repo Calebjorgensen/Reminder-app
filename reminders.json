@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Doctor Appointment",
+    "description": "Annual physical checkup at 10 AM",
+    "dueDate": "2025-08-10T10:00:00.000Z",
+    "completed": false
+  },
+  {
+    "title": "Project Deadline",
+    "description": "Finish and submit final report",
+    "dueDate": "2025-08-15T23:59:00.000Z",
+    "completed": false
+  },
+  {
+    "title": "Buy Groceries",
+    "description": "Milk, eggs, bread, and fruit",
+    "dueDate": "2025-08-05T18:00:00.000Z",
+    "completed": true
+  },
+  {
+    "title": "Birthday Party",
+    "description": "Josh's birthday celebration",
+    "dueDate": "2025-08-20T19:00:00.000Z",
+    "completed": false
+  },
+  {
+    "title": "Team Meeting",
+    "description": "Weekly sync with development team",
+    "dueDate": "2025-08-08T09:00:00.000Z",
+    "completed": false
+  }
+]
